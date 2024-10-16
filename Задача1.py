@@ -28,11 +28,11 @@ def print_table(a):
             else:
                 end_mark = '  '
             if x == "##":
-                end=end_mark
+                print(tc.colored(x, 'yellow'), end=end_mark)
             elif x == 88:
-                end=end_mark
+                print(tc.colored(x, 'red'), end=end_mark)
             else:
-                 end=end_mark
+                print(tc.colored(x, 'black'), end=end_mark)
         print()
 
 print_table(a)
